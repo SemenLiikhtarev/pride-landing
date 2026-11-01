@@ -4,9 +4,9 @@ const fs = require('fs')
 const path = require('path')
 
 const ROOT = __dirname
-const DATA_DIR = path.join(ROOT, 'data')
-const XLSX_FILE = path.join(DATA_DIR, 'leads.xlsx')
-const OUTBOX_FILE = path.join(DATA_DIR, 'outbox.ndjson')
+const DATA_DIR = process.env.DATA_DIR || path.join(ROOT, 'data')
+const XLSX_FILE = process.env.XLSX_PATH || path.join(DATA_DIR, 'leads.xlsx')
+const OUTBOX_FILE = process.env.OUTBOX_PATH || path.join(DATA_DIR, 'outbox.ndjson')
 const PORT = Number(process.env.PORT) || 8100
 
 /* ---------- конфиг (.env опционален) ---------- */
