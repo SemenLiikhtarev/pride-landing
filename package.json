@@ -1,0 +1,15 @@
+{
+  "name": "pride-landing",
+  "version": "1.0.0",
+  "description": "Лендинг гостевого дома «Прайд» (Тверь): бронирование, предоплата, заявки в Excel",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "nodemailer": "^10.0.13"
+  }
+}

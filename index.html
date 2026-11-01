@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23F59E0B'/%3E%3Ctext x='32' y='45' font-size='38' font-family='Arial,sans-serif' font-weight='700' text-anchor='middle' fill='%23fff'%3E%D0%9F%3C/text%3E%3C/svg%3E">
+<title>Гостевой дом «Прайд» в Твери — бронирование номеров от 2903 ₽</title>
+<meta name="description" content="Гостевой дом «Прайд», Тверь, ул. Академика Туполева, 10/44. Номера от 2903 ₽ за ночь, бесплатная парковка, Wi-Fi, бильярд. Онлайн-бронирование свободных дат и предоплата картой.">
+<meta property="og:title" content="Гостевой дом «Прайд» — Тверь">
+<meta property="og:description" content="Уютный гостевой дом в Твери: номера от 2903 ₽, бесплатная парковка и Wi-Fi. Бронирование свободных дат онлайн.">
+<meta property="og:image" content="img/pride4.webp">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/pride4.webp">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#top">
+      <span class="logo__mark">П</span>
+      <span class="logo__text">Гостевой дом <b>«Прайд»</b></span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <a href="#photos">Фото</a>
+      <a href="#booking">Номера</a>
+      <a href="#amenities">Услуги</a>
+      <a href="#about">О доме</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <span class="header__price">от <b>2 903 ₽</b> / ночь</span>
+      <button class="btn btn--primary js-open-booking" type="button">Забронировать</button>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__media" id="heroMedia">
+      <div class="hero__slide is-active" style="background-image:url('img/pride3.webp')"></div>
+      <div class="hero__slide" style="background-image:url('img/pride4.webp')"></div>
+      <div class="hero__slide" style="background-image:url('img/pride2.webp')"></div>
+      <div class="hero__slide" style="background-image:url('img/pride5.webp')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <div class="hero__badges">
+        <span class="pill">Тверь · Россия</span>
+        <span class="pill">22 фото</span>
+        <span class="pill pill--accent">Бесплатная парковка</span>
+      </div>
+
+      <h1 class="hero__title">Гостевой дом<br>«Прайд»</h1>
+      <p class="hero__subtitle">Уют вместо формального отеля: деревянные интерьеры, тихий двор в 1,8 км от центра Твери и зона с бильярдом.</p>
+
+      <div class="hero__cta">
+        <button class="btn btn--primary btn--lg js-open-booking" type="button">Проверить свободные даты</button>
+        <a class="btn btn--ghost btn--lg" href="#photos">Смотреть фото</a>
+      </div>
+
+      <div class="hero__facts">
+        <div class="fact"><span class="fact__value">от 2 903 ₽</span><span class="fact__label">за ночь</span></div>
+        <div class="fact"><span class="fact__value">12:00 / 10:00</span><span class="fact__label">заезд / выезд</span></div>
+        <div class="fact"><span class="fact__value">1,8 км</span><span class="fact__label">до центра</span></div>
+        <div class="fact"><span class="fact__value">3 типа</span><span class="fact__label">номеров</span></div>
+      </div>
+    </div>
+
+    <div class="hero__address">
+      <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+      ул. Академика Туполева, д. 10/44, Тверь
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section class="section" id="photos">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Фото</span>
+          <h2 class="section__title">Как выглядит гостевой дом</h2>
+        </div>
+        <p class="section__lead">6 из 22 фотографий. Нажмите на снимок, чтобы открыть его в полном размере.</p>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section section--alt" id="booking">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Номера и бронирование</span>
+          <h2 class="section__title">Выберите свободные даты</h2>
+        </div>
+        <p class="section__lead">Календарь показывает свободные даты. Выберите заезд и выезд, затем номер — бронирование занимает пару минут.</p>
+      </div>
+
+      <div class="booking">
+        <!-- calendar -->
+        <div class="booking__panel card">
+          <div class="cal-toolbar">
+            <div class="guests">
+              <span class="guests__label">Гости</span>
+              <div class="counter" data-counter="adults">
+                <button type="button" class="counter__btn" data-dir="-1" aria-label="Меньше взрослых">−</button>
+                <span class="counter__value"><b id="adultsValue">2</b> <i id="adultsWord">взрослых</i></span>
+                <button type="button" class="counter__btn" data-dir="1" aria-label="Больше взрослых">+</button>
+              </div>
+              <div class="counter" data-counter="children">
+                <button type="button" class="counter__btn" data-dir="-1" aria-label="Меньше детей">−</button>
+                <span class="counter__value"><b id="childrenValue">0</b> <i id="childrenWord">детей</i></span>
+                <button type="button" class="counter__btn" data-dir="1" aria-label="Больше детей">+</button>
+              </div>
+            </div>
+            <button class="link-btn" id="calReset" type="button">Сбросить даты</button>
+          </div>
+
+          <div class="cal-nav">
+            <button class="cal-nav__btn" id="calPrev" type="button" aria-label="Предыдущий месяц">‹</button>
+            <div class="cal-nav__legend">
+              <span><i class="dot dot--free"></i> свободно</span>
+              <span><i class="dot dot--busy"></i> занято</span>
+              <span><i class="dot dot--sel"></i> выбранный период</span>
+            </div>
+            <button class="cal-nav__btn" id="calNext" type="button" aria-label="Следующий месяц">›</button>
+          </div>
+
+          <div class="calendar" id="calendar"></div>
+
+          <div class="cal-summary" id="calSummary">
+            <div class="cal-summary__dates">
+              <div class="datebox"><span>Заезд</span><b id="dateIn">—</b></div>
+              <span class="datebox__arrow">→</span>
+              <div class="datebox"><span>Выезд</span><b id="dateOut">—</b></div>
+            </div>
+            <div class="cal-summary__nights"><b id="nightsCount">0</b> <span id="nightsWord">ночей</span></div>
+          </div>
+        </div>
+
+        <!-- rooms -->
+        <div class="booking__rooms">
+          <div class="rooms__head">
+            <h3>Доступные номера</h3>
+            <span class="rooms__hint" id="roomsHint">Цены за ночь при выбранных датах</span>
+          </div>
+          <div class="rooms" id="rooms"></div>
+        </div>
+      </div>
+
+      <!-- summary + CTA -->
+      <div class="checkout card" id="checkout">
+        <div class="checkout__info">
+          <div class="checkout__row">
+            <span>Период</span>
+            <b id="sumDates">выберите даты</b>
+          </div>
+          <div class="checkout__row">
+            <span>Номер</span>
+            <b id="sumRoom">не выбран</b>
+          </div>
+          <div class="checkout__row">
+            <span>Гости</span>
+            <b id="sumGuests">2 взрослых</b>
+          </div>
+          <div class="checkout__row checkout__row--total">
+            <span>Итого за <span id="sumNights">0</span> <span id="sumNightsWord">ночей</span></span>
+            <b id="sumTotal">0 ₽</b>
+          </div>
+        </div>
+
+        <div class="checkout__action">
+          <label class="radio-card">
+            <input type="radio" name="prepay" value="0" checked>
+            <span><b>Без предоплаты</b><i>Оплата при заселении</i></span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="prepay" value="30">
+            <span><b>Предоплата 30%</b><i>Картой онлайн, остаток при заезде</i></span>
+          </label>
+          <label class="radio-card">
+            <input type="radio" name="prepay" value="100">
+            <span><b>Оплатить полностью</b><i>Останется только заселиться</i></span>
+          </label>
+
+          <div class="checkout__prepay" id="prepayBox">
+            <span>К оплате сейчас</span>
+            <b id="prepayNow">0 ₽</b>
+          </div>
+
+          <button class="btn btn--primary btn--lg btn--block" id="toCheckout" type="button" disabled>Забронировать</button>
+          <p class="checkout__note">Бесплатная отмена за 24 часа до заезда. Подтверждение придёт сразу после оплаты.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="section" id="amenities">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Услуги в гостевом доме</span>
+          <h2 class="section__title">Что есть для гостей</h2>
+        </div>
+      </div>
+      <div class="amenities" id="amenitiesGrid"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section section--alt" id="about">
+    <div class="container about">
+      <div class="about__text">
+        <span class="eyebrow">О гостевом доме</span>
+        <h2 class="section__title">Уют гостевого дома вместо шаблонного отеля</h2>
+        <p id="aboutP1"></p>
+        <p id="aboutP2"></p>
+
+        <div class="note">
+          <b>Важная информация</b>
+          <div class="note__grid">
+            <div><span>Заселение</span><b>после 12:00</b></div>
+            <div><span>Выезд</span><b>до 10:00</b></div>
+            <div><span>Питомцы</span><b>можно, платно</b></div>
+            <div><span>Парковка</span><b>бесплатная</b></div>
+          </div>
+          <p id="docNote"></p>
+        </div>
+      </div>
+
+      <div class="about__side">
+        <div class="card facts">
+          <h3>Расположение</h3>
+          <p class="facts__address" id="addressLine"></p>
+          <ul class="distances" id="distances"></ul>
+          <ul class="landmarks" id="landmarks"></ul>
+          <a class="btn btn--outline btn--block" id="mapsLink" href="#" target="_blank" rel="noopener">Открыть на карте</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Отзывы</span>
+          <h2 class="section__title">Оценки постояльцев</h2>
+        </div>
+      </div>
+      <div class="reviews">
+        <div class="reviews__empty card">
+          <div class="reviews__score">—</div>
+          <div>
+            <h3>Отзывов пока нет</h3>
+            <p>Отзывы могут оставлять только те, кто совершил бронирование. Так мы формируем честный рейтинг.</p>
+            <button class="btn btn--outline js-open-booking" type="button">Забронировать и оставить отзыв</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq">
+    <div class="container">
+      <div class="section__head">
+        <div>
+          <span class="eyebrow">Вопросы</span>
+          <h2 class="section__title">Что спрашивают чаще всего</h2>
+        </div>
+      </div>
+      <div class="faq" id="faqList"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section" id="contacts">
+    <div class="container contacts">
+      <div class="contacts__info">
+        <span class="eyebrow">Контакты</span>
+        <h2 class="section__title">Забронируйте номер онлайн</h2>
+        <p class="section__lead">Выберите свободные даты и оплатите удобным способом. Если нужен ранний заезд, поздний выезд или размещение с питомцем — напишите в комментарии к брони.</p>
+
+        <ul class="contacts__list">
+          <li>
+            <span>Адрес</span>
+            <b>ул. Академика Туполева, д. 10/44, Тверь</b>
+          </li>
+          <li>
+            <span>Заезд / выезд</span>
+            <b>после 12:00 / до 10:00</b>
+          </li>
+          <li>
+            <span>Бронирование</span>
+            <b>онлайн, подтверждение сразу</b>
+          </li>
+        </ul>
+
+        <button class="btn btn--primary btn--lg js-open-booking" type="button">Перейти к бронированию</button>
+      </div>
+
+      <form class="card callback" id="callbackForm" novalidate>
+        <h3>Нужна консультация?</h3>
+        <p>Оставьте телефон — перезвоним и подберём номер под ваши даты.</p>
+        <label class="field">
+          <span>Имя</span>
+          <input type="text" name="name" placeholder="Как к вам обращаться" required>
+        </label>
+        <label class="field">
+          <span>Телефон</span>
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        </label>
+        <button class="btn btn--primary btn--block" type="submit">Жду звонка</button>
+        <p class="form-msg" id="callbackMsg" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="logo__mark">П</span>
+      <div>
+        <b>Гостевой дом «Прайд»</b>
+        <span>Тверь, ул. Академика Туполева, 10/44</span>
+      </div>
+    </div>
+    <nav class="footer__nav">
+      <a href="#photos">Фото</a>
+      <a href="#booking">Номера</a>
+      <a href="#amenities">Услуги</a>
+      <a href="#faq">Вопросы</a>
+    </nav>
+    <p class="footer__note">Информация и фотографии — со страницы объекта на Ozon Travel. Демонстрационная версия сайта: оплата на странице имитируется и не списывает реальные деньги.</p>
+  </div>
+</footer>
+
+<!-- mobile sticky bar -->
+<div class="mobilebar" id="mobilebar">
+  <div class="mobilebar__price"><span>от</span><b>2 903 ₽</b><span>/ ночь</span></div>
+  <button class="btn btn--primary js-open-booking" type="button">Забронировать</button>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox__close" id="lbClose" type="button" aria-label="Закрыть">×</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" type="button" aria-label="Предыдущее фото">‹</button>
+  <figure><img id="lbImg" src="" alt=""><figcaption id="lbCap"></figcaption></figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lbNext" type="button" aria-label="Следующее фото">›</button>
+</div>
+
+<!-- BOOKING MODAL -->
+<div class="modal" id="bookingModal" hidden>
+  <div class="modal__backdrop" data-close></div>
+  <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="bmTitle">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+
+    <div class="modal__steps" id="bmSteps">
+      <span class="step is-active" data-step="1"><i>1</i>Гость</span>
+      <span class="step" data-step="2"><i>2</i>Оплата</span>
+      <span class="step" data-step="3"><i>3</i>Готово</span>
+    </div>
+
+    <!-- step 1 -->
+    <div class="modal__body" data-panel="1">
+      <h3 id="bmTitle">Данные гостя</h3>
+      <div class="order-card" id="orderCard"></div>
+
+      <form id="guestForm" novalidate>
+        <div class="field-row">
+          <label class="field"><span>Имя и фамилия</span>
+            <input type="text" name="fullname" placeholder="Иван Иванов" autocomplete="name" required>
+            <em class="err" data-for="fullname"></em>
+          </label>
+          <label class="field"><span>Телефон</span>
+            <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" required>
+            <em class="err" data-for="phone"></em>
+          </label>
+        </div>
+        <label class="field"><span>E-mail для подтверждения</span>
+          <input type="email" name="email" placeholder="you@mail.ru" autocomplete="email" required>
+          <em class="err" data-for="email"></em>
+        </label>
+        <label class="field"><span>Комментарий</span>
+          <textarea name="comment" rows="3" placeholder="Ранний заезд, размещение с питомцем, детская кроватка…"></textarea>
+        </label>
+
+        <div class="modal__footer">
+          <div class="modal__total"><span>К оплате сейчас</span><b id="mPrepayNow">0 ₽</b></div>
+          <button class="btn btn--primary btn--lg" type="submit">Далее — оплата</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- step 2 -->
+    <div class="modal__body" data-panel="2" hidden>
+      <h3>Предоплата картой</h3>
+      <p class="modal__lead" id="payLead"></p>
+
+      <div class="paymethods">
+        <span class="paymethods__card">VISA</span>
+        <span class="paymethods__card">MasterCard</span>
+        <span class="paymethods__card">МИР</span>
+        <span class="paymethods__badge">демо-режим</span>
+      </div>
+
+      <form id="payForm" novalidate>
+        <div id="cardFields">
+        <label class="field"><span>Номер карты</span>
+          <input type="text" name="card" inputmode="numeric" placeholder="0000 0000 0000 0000" maxlength="19" autocomplete="cc-number">
+          <em class="err" data-for="card"></em>
+        </label>
+        <label class="field"><span>Имя на карте</span>
+          <input type="text" name="cardname" placeholder="IVAN IVANOV" autocomplete="cc-name">
+          <em class="err" data-for="cardname"></em>
+        </label>
+        <div class="field-row">
+          <label class="field"><span>Срок действия</span>
+            <input type="text" name="expiry" inputmode="numeric" placeholder="ММ/ГГ" maxlength="5" autocomplete="cc-exp">
+            <em class="err" data-for="expiry"></em>
+          </label>
+          <label class="field"><span>CVC</span>
+            <input type="password" name="cvc" inputmode="numeric" placeholder="•••" maxlength="3" autocomplete="cc-csc">
+            <em class="err" data-for="cvc"></em>
+          </label>
+        </div>
+        </div>
+        <p class="demo-note" id="noPayNote" hidden>Карта не требуется: бронь подтверждается без списания, оплата производится при заселении.</p>
+
+        <div class="modal__footer">
+          <button class="btn btn--ghost" type="button" id="backTo1">Назад</button>
+          <div class="modal__total"><span>Списать</span><b id="mPaySum">0 ₽</b></div>
+          <button class="btn btn--primary btn--lg" type="submit" id="payBtn">Оплатить</button>
+        </div>
+        <p class="demo-note">Это демонстрационная форма: данные карты никуда не отправляются, реальное списание не происходит.</p>
+      </form>
+    </div>
+
+    <!-- step 3 -->
+    <div class="modal__body" data-panel="3" hidden>
+      <div class="success">
+        <div class="success__icon">
+          <svg viewBox="0 0 52 52" width="52" height="52" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" d="M14 27l8 8 16-18"/></svg>
+        </div>
+        <h3>Номер забронирован</h3>
+        <p class="success__id">Бронь <b id="bookId">—</b></p>
+        <div class="order-card" id="doneCard"></div>
+        <p class="success__mail" id="doneMail"></p>
+        <div class="modal__footer modal__footer--center">
+          <button class="btn btn--outline" id="icsBtn" type="button">Добавить в календарь</button>
+          <button class="btn btn--primary" id="doneBtn" type="button">Готово</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" hidden></div>
+
+<script src="js/leads.js"></script>
+<script src="js/data.js"></script>
+<script src="js/booking.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
