@@ -1,0 +1,30 @@
+services:
+  - type: web
+    name: pride-landing
+    env: node
+    plan: free
+    buildCommand: npm ci --omit=dev
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_VERSION
+        value: 20.18.0
+      - key: NOTIFY_EMAIL
+        value: lsem2010@yandex.ru
+      - key: EXPORT_KEY
+        generateValue: true
+      # SMTP опционально - заполнить в Render Dashboard после деплоя
+      # - key: SMTP_HOST
+      #   value: smtp.yandex.ru
+      # - key: SMTP_PORT
+      #   value: "465"
+      # - key: SMTP_SECURE
+      #   value: "true"
+      # - key: SMTP_USER
+      #   sync: false
+      # - key: SMTP_PASS
+      #   sync: false
+    disk:
+      name: data
+      mountPath: ./data
+      sizeGB: 1
